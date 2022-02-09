@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/searchScreen">
+    <fragment
+        android:id="@+id/searchScreen"
+        android:name="com.msy.themoviemanager.SearchScreen"
+        android:label="0"
+        tools:layout="@layout/fragment_search_screen" />
+    <fragment
+        android:id="@+id/favoritesScreen"
+        android:name="com.msy.themoviemanager.FavoritesScreen"
+        android:label="2"
+        tools:layout="@layout/fragment_favorites_screen" />
+    <fragment
+        android:id="@+id/watchlistScreen"
+        android:name="com.msy.themoviemanager.WatchlistScreen"
+        android:label="1"
+        tools:layout="@layout/fragment_watchlist_screen" />
+</navigation>
